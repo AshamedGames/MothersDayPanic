@@ -30,8 +30,9 @@
 event_inherited();
 
 image_speed = 0;
-sprite_index = 0;
+image_index = 0;
 item_name = "burger";
+item_type = "food";
 place_cooked = "grill";
 burger_temp = "raw";
 flippable = true;
@@ -156,7 +157,6 @@ if(cooking){//you will have to come up with a fix for if the hour changes while 
         } else if (flip_bot &amp;&amp; mouse_x &gt; x - 17 &amp;&amp; mouse_x &lt; x + 17
         &amp;&amp; mouse_y &gt; y - 24 &amp;&amp; mouse_y &lt; y - 8){
             flip_top = true;
-            //instance_destroy();
             //obj_clock.cur_time = "FLIP TOP";            
             cook_start = obj_clock.cur_min;
             

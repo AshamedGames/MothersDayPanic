@@ -29,7 +29,7 @@
 
 count = 0;
 cur_time = "11:00"
-sec_per_min = 8;
+sec_per_min = 3;
 cur_min = 0;
 cur_hour = 11;
 cur_sec = 0; // only goes up to 10 and isn't shown.

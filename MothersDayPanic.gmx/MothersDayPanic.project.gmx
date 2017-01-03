@@ -9,9 +9,11 @@
     <sprites name="Food">
       <sprite>sprites\spr_burger</sprite>
       <sprite>sprites\spr_fries</sprite>
+      <sprite>sprites\spr_avocado</sprite>
     </sprites>
     <sprites name="Pickupable">
       <sprite>sprites\spr_spatula</sprite>
+      <sprite>sprites\spr_knife</sprite>
     </sprites>
     <sprites name="Cook Places">
       <sprite>sprites\spr_grill</sprite>
@@ -52,6 +54,7 @@
       <object>objects\obj_noncookable</object>
       <object>objects\obj_burger</object>
       <object>objects\obj_fries</object>
+      <object>objects\obj_avocado</object>
     </objects>
     <objects name="Cook Places">
       <object>objects\obj_grill</object>
@@ -61,6 +64,7 @@
     </objects>
     <objects name="Tools">
       <object>objects\obj_spatula</object>
+      <object>objects\obj_knife</object>
     </objects>
   </objects>
   <rooms name="rooms">

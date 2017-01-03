@@ -34,6 +34,7 @@ draggable = false;
 dragging = false;
 hover = false;
 item_name = "thing";
+item_type = "object";
 </string>
           </argument>
         </arguments>
@@ -87,7 +88,7 @@ if(dragging){
             <kind>1</kind>
             <string>/// un clicked
 
-if(item_name != "spatula"){
+if(item_type != "tool"){
     if(global.hand_count == 2){
         clicked = false;
         dragging = false;
@@ -99,7 +100,7 @@ if(item_name != "spatula"){
         global.hand_count = 0;
     }
 } else{
-    if(input.right_dbl &gt; 0){//fix this tomorrow bitch
+    if(input.right_dbl &gt; 0){
         clicked = false;
         dragging = false;
         global.hand = "empty";
@@ -131,7 +132,7 @@ if(item_name != "spatula"){
             <kind>1</kind>
             <string>
 
-if(clicked &amp;&amp; draggable &amp;&amp; global.hand_count &lt; 3){
+if(clicked &amp;&amp; draggable &amp;&amp; global.hand_count &lt; 3 &amp;&amp; global.hand != "knife"){
   global.hand_count ++;
   dragging = true;
 }
