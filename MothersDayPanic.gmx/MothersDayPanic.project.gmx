@@ -20,8 +20,16 @@
       <sprite>sprites\spr_flattop</sprite>
       <sprite>sprites\spr_fryer</sprite>
     </sprites>
+    <sprites name="Menu Stuff">
+      <sprite>sprites\spr_new_game</sprite>
+      <sprite>sprites\spr_quit_game</sprite>
+      <sprite>sprites\spr_resume_game</sprite>
+      <sprite>sprites\spr_pause_menu</sprite>
+    </sprites>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\bk_title_screen</background>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <scripts name="state_machine">
@@ -66,9 +74,16 @@
       <object>objects\obj_spatula</object>
       <object>objects\obj_knife</object>
     </objects>
+    <objects name="Menu Stuffs">
+      <object>objects\obj_new_game</object>
+      <object>objects\obj_quit_game</object>
+      <object>objects\obj_pause_menu</object>
+      <object>objects\obj_resume_game</object>
+    </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_test_room</room>
+    <room>rooms\rm_title</room>
+    <room>rooms\rm_kitchen</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

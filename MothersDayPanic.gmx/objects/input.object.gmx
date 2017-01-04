@@ -93,7 +93,11 @@ if(mouse_check_button_pressed(mb_right)){
     right_dbl ++;
     alarm[0] = 30;
     //obj_clock.cur_time = string(right_dbl);
-    
+}
+
+//for game pausing
+if(keyboard_check_pressed(vk_escape)){
+    global.paused = !global.paused;
 }
 </string>
           </argument>
