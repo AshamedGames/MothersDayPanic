@@ -26,6 +26,7 @@
       <sprite>sprites\spr_resume_game</sprite>
       <sprite>sprites\spr_pause_menu</sprite>
     </sprites>
+    <sprite>sprites\sprite12</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bk_title_screen</background>
@@ -48,6 +49,14 @@
         <script>scripts\sc_state_init.gml</script>
         <script>scripts\sc_state_process.gml</script>
       </scripts>
+    </scripts>
+    <scripts name="Orders">
+      <script>scripts\scr_format_order.gml</script>
+      <script>scripts\list_fried.gml</script>
+      <script>scripts\list_entre.gml</script>
+      <script>scripts\list_toppings.gml</script>
+      <script>scripts\list_cheese.gml</script>
+      <script>scripts\scr_choose.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">
@@ -79,6 +88,9 @@
       <object>objects\obj_quit_game</object>
       <object>objects\obj_pause_menu</object>
       <object>objects\obj_resume_game</object>
+    </objects>
+    <objects name="Ticket Stuff">
+      <object>objects\obj_ticket</object>
     </objects>
   </objects>
   <rooms name="rooms">
