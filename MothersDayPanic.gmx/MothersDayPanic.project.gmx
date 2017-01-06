@@ -26,7 +26,7 @@
       <sprite>sprites\spr_resume_game</sprite>
       <sprite>sprites\spr_pause_menu</sprite>
     </sprites>
-    <sprite>sprites\sprite12</sprite>
+    <sprite>sprites\spr_ticket</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bk_title_screen</background>
@@ -51,12 +51,16 @@
       </scripts>
     </scripts>
     <scripts name="Orders">
-      <script>scripts\scr_format_order.gml</script>
       <script>scripts\list_fried.gml</script>
       <script>scripts\list_entre.gml</script>
       <script>scripts\list_toppings.gml</script>
       <script>scripts\list_cheese.gml</script>
+      <script>scripts\list_temp.gml</script>
       <script>scripts\scr_choose.gml</script>
+      <script>scripts\scr_format_order.gml</script>
+      <script>scripts\scr_reset_ticket.gml</script>
+      <script>scripts\scr_set_ticket.gml</script>
+      <script>scripts\scr_make_ticket.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">

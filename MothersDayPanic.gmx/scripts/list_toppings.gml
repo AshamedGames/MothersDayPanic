@@ -1,5 +1,5 @@
 var toppings;
-toppings[0] = 'tomano';
+toppings[0] = 'tomato';
 toppings[1] = 'onion';
 toppings[2] = 'lettuce';
 toppings[3] = 'jalapeno';

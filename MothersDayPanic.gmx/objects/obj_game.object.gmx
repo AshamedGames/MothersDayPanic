@@ -27,6 +27,8 @@
             <kind>1</kind>
             <string>// Game Variables
 
+window_set_fullscreen(true);
+
 global.paused = false;
 global.game_speed = 10;
 global.hand = "empty";

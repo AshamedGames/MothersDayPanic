@@ -1,75 +1,86 @@
-///scr_make_ticket(tick_num,app,entre,cajun,bone_in,toasted_bun,top1,top2,top3,top4,top5,side)
+///scr_make_ticket(app,entre,temp,cajun,bone_in,toasted_bun,top1,top2,top3,top4,top5,side)
 
-var tick_num, app, entre, cajun, bone_in, top1, top2, top3, top4, top5, side;
+var app, entre, temp, cajun, bone_in, top1, top2, top3, top4, top5, side;
 
-var order = "";
+var order = "none";
 
 
 app = argument[0];
 entre = argument[1];
-cajun = argument[2];
-bone_in = argument[3];
-top1 = argument[4];
-top2 = argument[5];
-top3 = argument[6];
-top4 = argument[7];
-top5 = argument[8];
-top6 = argument[9];
+temp = argument[2];
+cajun = argument[3];
+bone_in = argument[4];
+top1 = argument[5];
+top2 = argument[6];
+top3 = argument[7];
+top4 = argument[8];
+top5 = argument[9];
 side = argument[10];
 
 if(cajun){
     order = 
-string(tick_num) + "#
-    Appetizer: " + app + "#________#
-    Entre: " + entre + "#
-        add cajun #" + 
-    top1 + "#        " +
-    top2 + "#        " +
-    top3 + "#        " +
-    top4 + "#        " +
-    top5 + "#    Side: " +
-    side;
+"#
+    Appetizer: " + string(app) + "#___________________#
+    Entre: " + string(entre) + "#
+        add cajun #        " + 
+    string(top1) + "#        " +
+    string(top2) + "#        " +
+    string(top3) + "#        " +
+    string(top4) + "#        " +
+    string(top5) + "#    Side: " +
+    string(side);
     
     
 
 } else if (entre == "wings"){
     if(bone_in){
         order = 
-"Order num: " + string(tick_num) + "#
-    Appetizer: " + app + "#________#
-    Entre: " + entre + "#
-        bone in #" + 
-    top1 + "#        " +
-    top2 + "#        " +
-    top3 + "#        " +
-    top4 + "#        " +
-    top5 + "#    Side: " +
-    side;
+"#
+    Appetizer: " + string(app) + "#___________________#
+    Entre: " + string(entre) + "#
+        bone in #        " + 
+    string(top1) + "#        " +
+    string(top2) + "#        " +
+    string(top3) + "#        " +
+    string(top4) + "#        " +
+    string(top5) + "#    Side: " +
+    string(side);
     } else{
         order = 
-"Order num: " + string(tick_num) + "#
-    Appetizer: " + app + "#________#
-    Entre: " + entre + "#
-        boneless #" + 
-    top1 + "#        " +
-    top2 + "#        " +
-    top3 + "#        " +
-    top4 + "#        " +
-    top5 + "#    Side: " +
-    side;
+"#
+    Appetizer: " + string(app) + "#___________________#
+    Entre: " + string(entre) + "#
+        boneless #        " + 
+    string(top1) + "#        " +
+    string(top2) + "#        " +
+    string(top3) + "#        " +
+    string(top4) + "#        " +
+    string(top5) + "#    Side: " +
+    string(side);
     }
+} else if(entre == 'burger'){
+    order = 
+"#
+    Appetizer: " + string(app) + "#___________________#
+    Entre: " + string(entre) + "#
+        " + string(temp) + "#        " + 
+    string(top1) + "#        " +
+    string(top2) + "#        " +
+    string(top3) + "#        " +
+    string(top4) + "#        " +
+    string(top5) + "#    Side: " +
+    string(side);
 } else{
     order = 
-string(tick_num) + "#
-    Appetizer: " + app + "#________#
-    Entre: " + entre + "#
-        add cajun #" + 
-    top1 + "#        " +
-    top2 + "#        " +
-    top3 + "#        " +
-    top4 + "#        " +
-    top5 + "#    Side: " +
-    side;
+"#
+    Appetizer: " + string(app) + "#___________________#
+    Entre: " + string(entre) + "#        " + 
+    string(top1) + "#        " +
+    string(top2) + "#        " +
+    string(top3) + "#        " +
+    string(top4) + "#        " +
+    string(top5) + "#    Side: " +
+    string(side);
 }
 
 
