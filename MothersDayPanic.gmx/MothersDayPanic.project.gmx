@@ -10,6 +10,15 @@
       <sprite>sprites\spr_burger</sprite>
       <sprite>sprites\spr_fries</sprite>
       <sprite>sprites\spr_avocado</sprite>
+      <sprite>sprites\spr_onion</sprite>
+      <sprite>sprites\spr_lettuce</sprite>
+      <sprite>sprites\spr_tomato</sprite>
+      <sprite>sprites\spr_both_buns</sprite>
+      <sprite>sprites\spr_top_bun</sprite>
+      <sprite>sprites\spr_bot_bun</sprite>
+      <sprite>sprites\spr_cheddar</sprite>
+      <sprite>sprites\spr_pepper_jack</sprite>
+      <sprite>sprites\spr_swiss</sprite>
     </sprites>
     <sprites name="Pickupable">
       <sprite>sprites\spr_spatula</sprite>
@@ -76,6 +85,16 @@
       <object>objects\obj_burger</object>
       <object>objects\obj_fries</object>
       <object>objects\obj_avocado</object>
+      <object>objects\obj_onion</object>
+      <object>objects\obj_onion_fried</object>
+      <object>objects\obj_lettuce</object>
+      <object>objects\obj_tomato</object>
+      <object>objects\obj_both_buns</object>
+      <object>objects\obj_top_bun</object>
+      <object>objects\obj_bot_bun</object>
+      <object>objects\obj_cheddar</object>
+      <object>objects\obj_pepper_jack</object>
+      <object>objects\obj_swiss</object>
     </objects>
     <objects name="Cook Places">
       <object>objects\obj_grill</object>
