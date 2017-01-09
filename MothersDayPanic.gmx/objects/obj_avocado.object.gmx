@@ -3,7 +3,7 @@
   <spriteName>spr_avocado</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-8</depth>
   <persistent>0</persistent>
   <parentName>obj_noncookable</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -82,11 +82,11 @@ if(cut_count == 0){
 } else if(cut_count == 3){
     image_index = 3;
     if(!sixthed){
-        with(instance_create(x - 8, y, obj_avocado)){
-            cut_count = 3;
-            sixthed = true;
-            image_index = 3;
-        }  
+        //with(instance_create(x - 8, y, obj_avocado)){
+            //cut_count = 3;
+            //sixthed = true;
+            //image_index = 3;
+        //}  
         with(instance_create(x - 16, y, obj_avocado)){
             cut_count = 3;
             sixthed = true;
@@ -94,9 +94,7 @@ if(cut_count == 0){
         } 
     }
     sixthed = true;
-} else{
-    instance_destroy();
-}
+} 
 </string>
           </argument>
         </arguments>

@@ -60,7 +60,7 @@ if(cur_order == 1){
     
     full_ticket += scr_format_order(app,entre,temp,cajun,bone_in,top1,top2,top3,top4,top5,side);
     
-} else if(cur_order == 4){    
+}/* else if(cur_order == 4){    
     order4[0] = app;
     order4[1] = entre;
     order4[2] = temp;
@@ -90,4 +90,5 @@ if(cur_order == 1){
     
     full_ticket += scr_format_order(app,entre,temp,cajun,bone_in,top1,top2,top3,top4,top5,side);
     
-} 
+} */
+

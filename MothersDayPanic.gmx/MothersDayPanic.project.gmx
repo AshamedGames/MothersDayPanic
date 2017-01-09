@@ -36,9 +36,11 @@
       <sprite>sprites\spr_pause_menu</sprite>
     </sprites>
     <sprite>sprites\spr_ticket</sprite>
+    <sprite>sprites\spr_plate</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bk_title_screen</background>
+    <background>background\bk_all_rooms</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -70,6 +72,19 @@
       <script>scripts\scr_reset_ticket.gml</script>
       <script>scripts\scr_set_ticket.gml</script>
       <script>scripts\scr_make_ticket.gml</script>
+    </scripts>
+    <scripts name="Plate">
+      <script>scripts\scr_bot_bun_check.gml</script>
+      <script>scripts\scr_meat_check.gml</script>
+      <script>scripts\scr_cheese_check.gml</script>
+      <script>scripts\scr_lettuce_draw.gml</script>
+      <script>scripts\scr_onion_draw.gml</script>
+      <script>scripts\scr_tomato_draw.gml</script>
+      <script>scripts\scr_avocado_draw.gml</script>
+      <script>scripts\scr_top_bun_check.gml</script>
+    </scripts>
+    <scripts name="In Game Screens">
+      <script>scripts\scr_change_screens.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">
@@ -115,10 +130,12 @@
     <objects name="Ticket Stuff">
       <object>objects\obj_ticket</object>
     </objects>
+    <object>objects\obj_plate</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_kitchen0</room>
     <room>rooms\rm_title</room>
-    <room>rooms\rm_kitchen</room>
+    <room>rooms\rm_test</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

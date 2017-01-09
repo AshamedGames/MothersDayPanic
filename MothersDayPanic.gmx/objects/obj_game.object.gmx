@@ -27,12 +27,15 @@
             <kind>1</kind>
             <string>// Game Variables
 
-window_set_fullscreen(true);
+//window_set_fullscreen(true);
 
 global.paused = false;
 global.game_speed = 10;
 global.hand = "empty";
 global.hand_count = 0;
+
+scale = 3;
+window_set_size(window_get_width() * scale, window_get_height() * scale);
 </string>
           </argument>
         </arguments>

@@ -28,7 +28,7 @@
             <string>randomize();
 tic_num = 0;
 item_num = 0;
-orders = choose(1,2,3,4,5);
+orders = choose(1,2,3);
 cur_order = 0;
 full_ticket = "";
 
@@ -61,7 +61,7 @@ scr_make_ticket();
 
 
 draw_set_color(c_black);
-draw_text_transformed(0,0,full_ticket,0.5,0.5,0);
+draw_text_transformed(x,y,full_ticket,0.5,0.5,0);
 </string>
           </argument>
         </arguments>

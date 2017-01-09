@@ -124,7 +124,7 @@ if(cur_hour &lt; 10){
             <string>/// Drawing the clock test
 
 draw_set_color(c_fuchsia);
-draw_text(20, 20, cur_time);
+draw_text(228, 58, cur_time);
 </string>
           </argument>
         </arguments>
