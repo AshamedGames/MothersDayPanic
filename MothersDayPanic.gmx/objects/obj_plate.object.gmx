@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>obj_clickable</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -27,6 +27,11 @@
             <kind>1</kind>
             <string>/// plate variables
 
+event_inherited();
+
+draggable = true;
+item_name = 'plate';
+item_type = 'plate';
 bot_bun = false;
 bot_bun_temp = 'none';
 top_bun = false;
@@ -65,7 +70,7 @@ side_temp = 'none';
             <kind>1</kind>
             <string>///Get cheddar onto the plate
 
-if(!other.dragging){
+if(!other.dragging &amp;&amp; !dragging){
     top1 = 'swiss';
     with(other) instance_destroy();
     
@@ -94,7 +99,7 @@ if(!other.dragging){
             <kind>1</kind>
             <string>///Get cheddar onto the plate
 
-if(!other.dragging){
+if(!other.dragging &amp;&amp; !dragging){
     top1 = 'pepper jack';
     with(other) instance_destroy();
     
@@ -123,7 +128,7 @@ if(!other.dragging){
             <kind>1</kind>
             <string>///Get cheddar onto the plate
 
-if(!other.dragging){
+if(!other.dragging &amp;&amp; !dragging){
     top1 = 'cheddar';
     with(other) instance_destroy();
     
@@ -152,7 +157,7 @@ if(!other.dragging){
             <kind>1</kind>
             <string>///Get bottom bun onto the plate
 
-if(!other.dragging){
+if(!other.dragging &amp;&amp; !dragging){
     bot_bun = true;
     bot_bun_temp = other.temp;
     with(other) instance_destroy();
@@ -181,7 +186,7 @@ if(!other.dragging){
             <kind>1</kind>
             <string>///Get top bun onto the plate
 
-if(!other.dragging){
+if(!other.dragging &amp;&amp; !dragging){
     top_bun = true;
     top_bun_temp = other.temp;
     with(other) instance_destroy();
@@ -210,7 +215,7 @@ if(!other.dragging){
             <kind>1</kind>
             <string>///Get tomato onto the plate
 
-if(other.image_index == 1){
+if(other.image_index == 1 &amp;&amp; !dragging){
     if(!other.dragging){
         top4 = 'tomato';
         with(other) instance_destroy();
@@ -218,7 +223,9 @@ if(other.image_index == 1){
         
     }
 } else {
-    other.dragging = true;
+    if(!dragging){
+        other.dragging = true;
+    }
 }
 </string>
           </argument>
@@ -244,14 +251,16 @@ if(other.image_index == 1){
             <kind>1</kind>
             <string>///Get lettuce onto the plate
 
-if(other.image_index == 1){
-    if(!other.dragging){
+if(other.image_index == 1 &amp;&amp; !dragging){
+    if(!other.dragging ){
         top2 = 'lettuce';
         with(other) instance_destroy();
         
     }
 } else {
-    other.dragging = true;
+    if(!dragging){
+        other.dragging = true;
+    }
 }
 </string>
           </argument>
@@ -277,14 +286,16 @@ if(other.image_index == 1){
             <kind>1</kind>
             <string>///Get onion onto the plate
 
-if(other.image_index == 2){
-    if(!other.dragging){
+if(other.image_index == 2 &amp;&amp; !dragging){
+    if(!other.dragging ){
         top3 = 'onion';
         with(other) instance_destroy();
         
     }
 } else {
-    other.dragging = true;
+    if(!dragging){
+        other.dragging = true;
+    }
 }
 </string>
           </argument>
@@ -310,14 +321,51 @@ if(other.image_index == 2){
             <kind>1</kind>
             <string>///Get avocado onto the plate
 
-if(other.image_index == 3){
+if(other.image_index == 3 &amp;&amp; !dragging){
     if(!other.dragging){
         top5 = 'avocado';
         with(other) instance_destroy();
         
     }
 } else {
-    other.dragging = true;
+    if(!dragging){
+        other.dragging = true;
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_fries">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Get fries onto the plate
+
+
+if(!other.dragging &amp;&amp; !dragging){
+    side = 'fries';
+    side_temp = other.temp;
+    with(other) instance_destroy();
+        
+} else {
+    if(!dragging){
+        other.dragging = true;
+    }
 }
 </string>
           </argument>
@@ -343,7 +391,7 @@ if(other.image_index == 3){
             <kind>1</kind>
             <string>///Get burger onto the plate
 
-if(!other.dragging){
+if(!other.dragging &amp;&amp; !dragging){
     meat = other.item_name;
     meat_temp_a = other.a_temp;
     meat_temp_b = other.b_temp;
@@ -411,6 +459,11 @@ if(top5 == 'avocado'){
 //draw top bun
 if(top_bun){
     scr_top_bun_check();
+}
+
+//draw friez
+if(side == 'fries'){
+    scr_fries_check();
 }
 </string>
           </argument>

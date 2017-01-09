@@ -37,6 +37,13 @@
     </sprites>
     <sprite>sprites\spr_ticket</sprite>
     <sprite>sprites\spr_plate</sprite>
+    <sprites name="Masks">
+      <sprite>sprites\msk_cutting_board</sprite>
+      <sprite>sprites\msk_flat_top</sprite>
+      <sprite>sprites\msk_fryer</sprite>
+      <sprite>sprites\msk_grill</sprite>
+    </sprites>
+    <sprite>sprites\sprite27</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bk_title_screen</background>
@@ -82,6 +89,7 @@
       <script>scripts\scr_tomato_draw.gml</script>
       <script>scripts\scr_avocado_draw.gml</script>
       <script>scripts\scr_top_bun_check.gml</script>
+      <script>scripts\scr_fries_check.gml</script>
     </scripts>
     <scripts name="In Game Screens">
       <script>scripts\scr_change_screens.gml</script>
@@ -110,6 +118,9 @@
       <object>objects\obj_cheddar</object>
       <object>objects\obj_pepper_jack</object>
       <object>objects\obj_swiss</object>
+      <objects name="Dispensers">
+        <object>objects\disp_burger</object>
+      </objects>
     </objects>
     <objects name="Cook Places">
       <object>objects\obj_grill</object>
@@ -133,8 +144,8 @@
     <object>objects\obj_plate</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_kitchen0</room>
     <room>rooms\rm_title</room>
+    <room>rooms\rm_kitchen</room>
     <room>rooms\rm_test</room>
   </rooms>
   <help>
