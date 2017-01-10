@@ -46,6 +46,7 @@ top4 = 'none';
 top5 = 'none';
 side = 'none';
 side_temp = 'none';
+sides_on = 0;
 </string>
           </argument>
         </arguments>
@@ -361,7 +362,7 @@ if(!other.dragging &amp;&amp; !dragging){
     side = 'fries';
     side_temp = other.temp;
     with(other) instance_destroy();
-        
+    sides_on++;    
 } else {
     if(!dragging){
         other.dragging = true;

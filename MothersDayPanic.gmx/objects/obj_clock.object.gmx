@@ -125,6 +125,10 @@ if(cur_hour &lt; 10){
 
 draw_set_color(c_fuchsia);
 draw_text(228, 58, cur_time);
+
+
+//for seeing the clock on all screens
+//draw_text(view_xview[0] + 228, view_yview[0] + 58, cur_time);
 </string>
           </argument>
         </arguments>

@@ -1,3 +1,3 @@
 
-draw_sprite(spr_onion,1,x+18,y-4);
+draw_sprite(spr_onion,2,x+16,y-2);
 

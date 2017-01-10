@@ -54,46 +54,23 @@
     <instance objName="obj_game" x="352" y="0" name="inst_86B2CDBD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="input" x="384" y="0" name="inst_1BFEA159" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_clock" x="224" y="64" name="inst_79686A2A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_clock" x="224" y="32" name="inst_9BB208EE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_fryer" x="311" y="203" name="inst_050B2333" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_flattop" x="479" y="145" name="inst_C42F8EA9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_grill" x="772" y="172" name="inst_07C6D054" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_burger" x="656" y="275" name="inst_440E0B11" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_burger" x="656" y="293" name="inst_2C2A3AC8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_burger" x="686" y="274" name="inst_38CBC4C3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_burger" x="686" y="291" name="inst_09879F73" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_burger" x="716" y="273" name="inst_FB1D46F0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_burger" x="716" y="290" name="inst_82F63000" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_burger" x="744" y="274" name="inst_816FB755" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_burger" x="745" y="291" name="inst_1A3D1B91" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_spatula" x="960" y="128" name="inst_796031FC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_spatula" x="941" y="130" name="inst_796031FC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_knife" x="1280" y="160" name="inst_BEF1DFDF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_avocado" x="1024" y="128" name="inst_FCE0421F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_onion" x="1056" y="128" name="inst_329C77B3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_lettuce" x="1088" y="128" name="inst_9EF41DFE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_tomato" x="1120" y="128" name="inst_94EC9E8B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_both_buns" x="992" y="192" name="inst_87DB4403" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_both_buns" x="1024" y="192" name="inst_B1C6BC51" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_both_buns" x="992" y="224" name="inst_869FF3BD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_both_buns" x="1024" y="224" name="inst_28B760DE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_both_buns" x="992" y="256" name="inst_15EAFC6D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_both_buns" x="1024" y="256" name="inst_162F8259" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_both_buns" x="992" y="288" name="inst_56A2C087" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_both_buns" x="1024" y="288" name="inst_10FA613F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_plate" x="1088" y="192" name="inst_2171CD9D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fries" x="192" y="160" name="inst_82532A8C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fries" x="224" y="160" name="inst_D28E4530" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fries" x="256" y="128" name="inst_6A62E710" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fries" x="256" y="160" name="inst_0E5D14C6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fries" x="256" y="192" name="inst_71AE45AC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fries" x="224" y="192" name="inst_7D3EC58D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fries" x="256" y="224" name="inst_731C702A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fries" x="192" y="192" name="inst_58E8904C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fries" x="192" y="224" name="inst_F6384EC0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fries" x="224" y="192" name="inst_A11E8F47" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fries" x="224" y="224" name="inst_0A193C7F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fries" x="192" y="128" name="inst_617BC38B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fries" x="224" y="128" name="inst_1C7FF893" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_plate" x="1089" y="203" name="inst_2171CD9D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="disp_burger" x="636" y="266" name="inst_CA3ED996" locked="0" code="" scaleX="1.90476191043854" scaleY="0.90625" colour="4294967295" rotation="0"/>
+    <instance objName="disp_fries" x="263" y="226" name="inst_E1D7B95E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="disp_avocado" x="1001" y="114" name="inst_42802A1D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="disp_onion" x="1036" y="114" name="inst_470ADBCF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="disp_lettuce" x="1070" y="115" name="inst_ACE64C31" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="disp_tomato" x="1108" y="117" name="inst_1389EE25" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="disp_cheddar" x="1025" y="145" name="inst_18A0709B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="disp_pep" x="1061" y="145" name="inst_8136536E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="disp_swiss" x="1092" y="147" name="inst_125DEC2D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_all_tickets" x="960" y="0" name="inst_AC814E66" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

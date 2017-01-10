@@ -8,6 +8,7 @@
   <sprites name="sprites">
     <sprites name="Food">
       <sprite>sprites\spr_burger</sprite>
+      <sprite>sprites\spr_chicken</sprite>
       <sprite>sprites\spr_fries</sprite>
       <sprite>sprites\spr_avocado</sprite>
       <sprite>sprites\spr_onion</sprite>
@@ -19,6 +20,17 @@
       <sprite>sprites\spr_cheddar</sprite>
       <sprite>sprites\spr_pepper_jack</sprite>
       <sprite>sprites\spr_swiss</sprite>
+      <sprites name="Dispensor">
+        <sprite>sprites\spr_bur_disp</sprite>
+        <sprite>sprites\spr_avocado_disp</sprite>
+        <sprite>sprites\spr_fries_bag</sprite>
+        <sprite>sprites\spr_onion_disp</sprite>
+        <sprite>sprites\spr_lettuce_disp</sprite>
+        <sprite>sprites\spr_tomato_disp</sprite>
+        <sprite>sprites\spr_cheddar_disp</sprite>
+        <sprite>sprites\spr_pep_disp</sprite>
+        <sprite>sprites\spr_swiss_disp</sprite>
+      </sprites>
     </sprites>
     <sprites name="Pickupable">
       <sprite>sprites\spr_spatula</sprite>
@@ -36,6 +48,7 @@
       <sprite>sprites\spr_pause_menu</sprite>
     </sprites>
     <sprite>sprites\spr_ticket</sprite>
+    <sprite>sprites\spr_sm_ticket</sprite>
     <sprite>sprites\spr_plate</sprite>
     <sprites name="Masks">
       <sprite>sprites\msk_cutting_board</sprite>
@@ -43,7 +56,6 @@
       <sprite>sprites\msk_fryer</sprite>
       <sprite>sprites\msk_grill</sprite>
     </sprites>
-    <sprite>sprites\sprite27</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bk_title_screen</background>
@@ -79,6 +91,7 @@
       <script>scripts\scr_reset_ticket.gml</script>
       <script>scripts\scr_set_ticket.gml</script>
       <script>scripts\scr_make_ticket.gml</script>
+      <script>scripts\scr_ticket_spot.gml</script>
     </scripts>
     <scripts name="Plate">
       <script>scripts\scr_bot_bun_check.gml</script>
@@ -120,6 +133,14 @@
       <object>objects\obj_swiss</object>
       <objects name="Dispensers">
         <object>objects\disp_burger</object>
+        <object>objects\disp_fries</object>
+        <object>objects\disp_avocado</object>
+        <object>objects\disp_onion</object>
+        <object>objects\disp_lettuce</object>
+        <object>objects\disp_tomato</object>
+        <object>objects\disp_cheddar</object>
+        <object>objects\disp_pep</object>
+        <object>objects\disp_swiss</object>
       </objects>
     </objects>
     <objects name="Cook Places">
@@ -140,6 +161,7 @@
     </objects>
     <objects name="Ticket Stuff">
       <object>objects\obj_ticket</object>
+      <object>objects\obj_all_tickets</object>
     </objects>
     <object>objects\obj_plate</object>
   </objects>

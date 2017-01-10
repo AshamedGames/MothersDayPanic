@@ -1,2 +1,2 @@
 
-draw_sprite(spr_avocado,3,x+14,y);
+draw_sprite(spr_avocado,3,x+12,y+2);

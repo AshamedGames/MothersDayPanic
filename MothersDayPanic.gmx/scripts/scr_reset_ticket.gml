@@ -12,6 +12,7 @@ order1[8] = 'none';
 order1[9] = 'none';
 order1[10] = 'none';
 
+/*
 order2[0] = 'none';
 order2[1] = 'none';
 order2[2] = 'none';
@@ -37,7 +38,7 @@ order3[9] = 'none';
 order3[10] = 'none';
 
 
-/*
+
 order4[0] = 'none';
 order4[1] = 'none';
 order4[2] = 'none';

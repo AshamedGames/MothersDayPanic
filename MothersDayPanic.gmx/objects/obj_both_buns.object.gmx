@@ -38,7 +38,7 @@ item_type = 'food';
         </arguments>
       </action>
     </event>
-    <event eventtype="6" enumb="0">
+    <event eventtype="6" enumb="4">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -56,14 +56,17 @@ item_type = 'food';
           <argument>
             <kind>1</kind>
             <string>
-with(instance_create(x, y - 8, obj_top_bun)){
-    dragging = true;
-}
-with(instance_create(x,y + 8, obj_bot_bun)){
-    dragging = false;
+
+if(global.hand_count &lt; 1 &amp;&amp; global.hand != "knife"){
+    with(instance_create(x, y - 8, obj_top_bun)){
+        dragging = true;
+    }
+    with(instance_create(x,y + 16, obj_bot_bun)){
+        dragging = false;
+    }
 }
 
-instance_destroy();
+//instance_destroy();
 </string>
           </argument>
         </arguments>

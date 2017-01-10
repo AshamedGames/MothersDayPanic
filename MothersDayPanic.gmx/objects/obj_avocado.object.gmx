@@ -71,9 +71,9 @@ if(cut_count == 0){
     image_index = 1;
     if(!halved){
         with(instance_create(x + 32, y, obj_avocado)){
-            cut_count =  1;
+            cut_count =  2;
             halved = true;
-            image_index = 1;
+            image_index = 2;
         }
         halved = true;
     }

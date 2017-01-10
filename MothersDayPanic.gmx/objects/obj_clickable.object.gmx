@@ -35,6 +35,8 @@ dragging = false;
 hover = false;
 item_name = "thing";
 item_type = "object";
+
+ticket_spot = 0;
 </string>
           </argument>
         </arguments>
@@ -132,7 +134,10 @@ if(item_type != "tool"){
             <kind>1</kind>
             <string>
 
-if(clicked &amp;&amp; draggable &amp;&amp; global.hand_count &lt; 3 &amp;&amp; global.hand != "knife"){
+if(clicked &amp;&amp; draggable &amp;&amp; global.hand_count &lt; 3 &amp;&amp; global.hand == "spatula"){
+  global.hand_count ++;
+  dragging = true;
+} else if(clicked &amp;&amp; draggable &amp;&amp; global.hand_count &lt; 1 &amp;&amp; global.hand != "knife"){
   global.hand_count ++;
   dragging = true;
 }

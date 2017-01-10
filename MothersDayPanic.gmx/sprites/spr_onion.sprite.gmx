@@ -8,7 +8,7 @@
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
   <bbox_left>5</bbox_left>
-  <bbox_right>27</bbox_right>
+  <bbox_right>26</bbox_right>
   <bbox_top>4</bbox_top>
   <bbox_bottom>26</bbox_bottom>
   <HTile>0</HTile>
@@ -25,6 +25,5 @@
     <frame index="2">images\spr_onion_2.png</frame>
     <frame index="3">images\spr_onion_3.png</frame>
     <frame index="4">images\spr_onion_4.png</frame>
-    <frame index="5">images\spr_onion_5.png</frame>
   </frames>
 </sprite>

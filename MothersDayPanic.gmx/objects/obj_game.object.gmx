@@ -62,9 +62,41 @@ window_set_size(window_get_width() * scale, window_get_height() * scale);
 
 
 if(global.paused){
-    instance_create(0,0,obj_pause_menu);
-    instance_create(96,128,obj_resume_game);
-    instance_create(288,128,obj_quit_game);
+    instance_create(view_xview[0],view_yview[0],obj_pause_menu);
+    instance_create(view_xview[0] + 96,view_yview[0] + 128,obj_resume_game);
+    instance_create(view_xview[0] + 288,view_yview[0] + 128,obj_quit_game);
+}
+
+if(global.hand == 'spatula' || global.hand == 'knife'){
+    window_set_cursor(cr_none);
+} else{
+    window_set_cursor(cr_handpoint);
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="3">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>
+while (ds_list_size(obj_all_tickets.ticket_list) &gt; 0){
+    ds_list_delete(obj_all_tickets.ticket_list,0);
 }
 </string>
           </argument>

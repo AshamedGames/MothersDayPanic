@@ -1,3 +1,3 @@
 
-draw_sprite(spr_lettuce,1,x+14,y);
+draw_sprite(spr_lettuce,1,x+12,y+2);
 
