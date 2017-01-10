@@ -31,6 +31,7 @@ global.paused = false;
 global.game_speed = 10;
 global.hand = "empty";
 global.hand_count = 0;
+global.ticket_count = 0;
 </string>
           </argument>
         </arguments>

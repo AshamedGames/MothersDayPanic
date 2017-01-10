@@ -64,6 +64,8 @@ for(var i = 0; i &lt; 20; i++){
         }
         ds_list_add(ticket_list, tick_inst);
     }
+    
+    global.ticket_count++;
 
 }
 

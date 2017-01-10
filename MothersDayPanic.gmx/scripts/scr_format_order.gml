@@ -1,86 +1,47 @@
 ///scr_make_ticket(app,entre,temp,cajun,bone_in,toasted_bun,top1,top2,top3,top4,top5,side)
 
-var app, entre, temp, cajun, bone_in, top1, top2, top3, top4, top5, side;
+var entre, temp, top1, top2, top3, top4, top5, side, waitstaff;
 
 var order = "none";
 
 
-app = argument[0];
-entre = argument[1];
-temp = argument[2];
-cajun = argument[3];
-bone_in = argument[4];
-top1 = argument[5];
-top2 = argument[6];
-top3 = argument[7];
-top4 = argument[8];
-top5 = argument[9];
-side = argument[10];
+entre = argument[0];
+temp = argument[1];
+top1 = argument[2];
+top2 = argument[3];
+top3 = argument[4];
+top4 = argument[5];
+top5 = argument[6];
+side = argument[7];
+waitstaff = choose('Stefan Raschke', 'Hunter Warwick', 'Newton Corwin', 'Trenton Alken', 'Monty Carthen', 'Herschel Wyse', 'Natalya Alegre','Alaine Sonoda', 'Lecia Callahan', 'Rosette Takach' ,'Tayna Warwick' ,'Carylon Calder');
 
-if(cajun){
-    order = 
-"#
-    Appetizer: " + string(app) + "#___________________#
-    Entre: " + string(entre) + "#
-        add cajun #        " + 
-    string(top1) + "#        " +
-    string(top2) + "#        " +
-    string(top3) + "#        " +
-    string(top4) + "#        " +
-    string(top5) + "#    Side: " +
-    string(side);
-    
-    
+order = "#Ticket Number: " + string(global.ticket_count) + 
+"#Wait-Person: " + waitstaff + "#___________________#"
 
-} else if (entre == "wings"){
-    if(bone_in){
-        order = 
-"#
-    Appetizer: " + string(app) + "#___________________#
-    Entre: " + string(entre) + "#
-        bone in #        " + 
-    string(top1) + "#        " +
-    string(top2) + "#        " +
-    string(top3) + "#        " +
-    string(top4) + "#        " +
-    string(top5) + "#    Side: " +
-    string(side);
-    } else{
-        order = 
-"#
-    Appetizer: " + string(app) + "#___________________#
-    Entre: " + string(entre) + "#
-        boneless #        " + 
-    string(top1) + "#        " +
-    string(top2) + "#        " +
-    string(top3) + "#        " +
-    string(top4) + "#        " +
-    string(top5) + "#    Side: " +
-    string(side);
+if(entre != 'none' ){
+    
+    order += "Entre: " + string(entre) + "#    Temp: " + string(temp) ;
+    
+    if(top1 != 'none'){
+        order += "#    Cheese: " + string(top1);
     }
-} else if(entre == 'burger'){
-    order = 
-"#
-    Appetizer: " + string(app) + "#___________________#
-    Entre: " + string(entre) + "#
-        " + string(temp) + "#        " + 
-    string(top1) + "#        " +
-    string(top2) + "#        " +
-    string(top3) + "#        " +
-    string(top4) + "#        " +
-    string(top5) + "#    Side: " +
-    string(side);
-} else{
-    order = 
-"#
-    Appetizer: " + string(app) + "#___________________#
-    Entre: " + string(entre) + "#        " + 
-    string(top1) + "#        " +
-    string(top2) + "#        " +
-    string(top3) + "#        " +
-    string(top4) + "#        " +
-    string(top5) + "#    Side: " +
-    string(side);
+    if(top2 != 'none'){
+        order += "#    " + string(top2);
+    }
+    if(top3 != 'none'){
+        order += "#    " + string(top3);
+    }
+    if(top4 != 'none'){
+        order += "#    " + string(top4);
+    }
+    if(top5 != 'none'){
+        order += "#    " + string(top5);
+    }        
+    if (side != 'none'){
+        order += "#Side: " + string(side);
+    }
+} else {
+    order += "    Appetizer: " + string(side);
 }
 
 
