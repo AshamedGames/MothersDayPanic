@@ -114,6 +114,7 @@
       <object>objects\input</object>
       <object>objects\obj_clock</object>
       <object>objects\obj_clickable</object>
+      <object>objects\obj_screenSetup</object>
     </objects>
     <objects name="Food">
       <object>objects\obj_cookable</object>
@@ -166,6 +167,7 @@
     <object>objects\obj_plate</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_screenSetup</room>
     <room>rooms\rm_title</room>
     <room>rooms\rm_kitchen</room>
     <room>rooms\rm_test</room>
